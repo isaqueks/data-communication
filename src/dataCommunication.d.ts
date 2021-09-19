@@ -9,7 +9,7 @@ export default class DataCommunication {
     constructor(comm: Communicator);
     private generateId;
     private messageHandler;
-    invoke<T>(command: string, data: any): Promise<T>;
+    invoke<T>(command: string, data?: any): Promise<T>;
     on<T>(command: string, handler: HandlerFn): void;
 }
 export {};

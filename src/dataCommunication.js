@@ -30,7 +30,7 @@ class DataCommunication {
     messageHandler(e) {
         return __awaiter(this, void 0, void 0, function* () {
             const msg = e.data;
-            if (!msg.type || (msg.data == undefined) || !msg.command) {
+            if (!msg.type || !msg.command) {
                 return console.warn('Invalid message', msg);
             }
             if (msg.type === 'request') {
@@ -61,7 +61,7 @@ class DataCommunication {
             }
         });
     }
-    invoke(command, data) {
+    invoke(command, data = null) {
         const id = this.generateId();
         const msg = {
             id,
