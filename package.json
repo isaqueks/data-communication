@@ -2,7 +2,7 @@
     "name": "@isaqueks/data-communication",
     "version": "0.1.0",
     "description": "Library for communication between worker/frames and top window",
-    "main": "index.tjs",
+    "main": "index.js",
     "dependencies": {
     },
     "devDependencies": {},
