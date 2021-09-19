@@ -43,7 +43,7 @@ export default class DataCommunication {
     
     private async messageHandler(e: MessageEvent<RegisteredMessage>) {
         const msg = e.data;
-        if (!msg.type || (msg.data == undefined) || !msg.command) {
+        if (!msg.type || !msg.command) {
             return console.warn('Invalid message', msg);
         }
 
@@ -79,7 +79,7 @@ export default class DataCommunication {
     }
 
 
-    public invoke<T>(command: string, data: any): Promise<T> { 
+    public invoke<T>(command: string, data: any = null): Promise<T> { 
 
         const id = this.generateId();
 
