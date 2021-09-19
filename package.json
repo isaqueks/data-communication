@@ -1,0 +1,15 @@
+{
+  "name": "@isaqueks/data-communication-dev",
+  "version": "0.1.0",
+  "description": "Library for communication between worker/frames and top window",
+  "main": "index.ts",
+  "dependencies": {
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "isaqueks",
+  "license": "MIT"
+}
